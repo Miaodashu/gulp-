@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>购物车</title>
+    <link rel="stylesheet" href="./../css/reset.css" />
+    <link rel="stylesheet" href="./../css/cart.css" />
+    <link rel="stylesheet" href="./../layui/css/layui.css">
+  </head>
+
+  <body>
+    <div class="cartMain">
+      <!-- 购物车头部 -->
+      <div class="header_title border-box">
+        <img
+          src="https://fastdfs.dgg.net/group9/M00/26/AC/CgIBv10-uaKEK0kIAAAAAA8pOU8062.png"
+          alt="logo"
+        />
+        <strong>购物车</strong>
+      </div>
+      <div class="cartMain_hd">
+        <div class="cart_title">
+          <strong>全部商品</strong>
+          <span>12</span>
+        </div>
+        <ul class="order_lists clearfloat cartTop border-box">
+          <li class="list_chk">
+            <!--所有商品全选-->
+            <input type="checkbox" id="all" class="whole_check" />
+            <label for="all"></label>
+            全选
+          </li>
+          <li class="list_con">商品信息</li>
+          <li class="list_price">单价（元）</li>
+          <li class="list_amount">数量</li>
+          <li class="list_sum">小计(元)</li>
+          <li class="list_op">操作</li>
+        </ul>
+      </div>
+      <ul class="cartBox_wrap">
+        <!-- 满减 -->
+        <li class="cartBox">
+          <div class="shop_info border-box">
+            <div class="active_type">满减</div>
+            <p>
+              活动商品满¥100-20,满¥200-40,满¥300-50
+              &nbsp;(<time>已减:¥50</time>)
+            </p>
+            <a href="">凑单></a>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_7" class="son_check" />
+                <label for="checkbox_7"></label>
+              </li>
+              <li class="list_con">
+                <!-- 商品信息 -->
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                    <div class="change_sku">
+                      修改属性
+                      <div class="change_sku_wrap">
+                        <ul class="clearfloat">
+                          <li class="sku_item_wrap clearfloat">
+                            <strong class="sku_item_title">注册区县</strong>
+                            <div class="sku_item_two_wrap">
+                              <a href="javascript:void(0)">武侯区</a>
+                              <a href="javascript:void(0)">锦江区</a>
+                              <a href="javascript:void(0)">青羊区</a>
+                              <a href="javascript:void(0)">金牛区</a>
+                              <a href="javascript:void(0)">新都区</a>
+                              <a href="javascript:void(0)">双流区</a>
+                              <a href="javascript:void(0)">武侯区</a>
+                              <a href="javascript:void(0)">锦江区</a>
+                              <a href="javascript:void(0)">青羊区</a>
+                              <a href="javascript:void(0)">金牛区</a>
+                              <a href="javascript:void(0)">新都区</a>
+                              <a href="javascript:void(0)">双流区</a>
+                              <a href="javascript:void(0)">武侯区</a>
+                            </div>
+                          </li>
+                          <li class="sku_item_wrap clearfloat">
+                            <strong class="sku_item_title">地址情况</strong>
+                            <div class="sku_item_two_wrap">
+                              <a href="javascript:void(0)">有注册地址</a>
+                              <a href="javascript:void(0)">无注册区域</a>
+                            </div>
+                          </li>
+                          <li class="sku_item_wrap clearfloat">
+                            <strong class="sku_item_title">缴资情况</strong>
+                            <div class="sku_item_two_wrap">
+                              <a href="javascript:void(0)">有注册地址</a>
+                              <a href="javascript:void(0)">无注册区域</a>
+                            </div>
+                          </li>
+                          <li class="sku_item_wrap clearfloat">
+                            <strong class="sku_item_title">附加服务</strong>
+                            <div class="sku_item_two_wrap">
+                              <a href="javascript:void(0)">有注册地址</a>
+                              <a href="javascript:void(0)">无注册区域</a>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="setting_wrap">
+                          <button class="setting_yes_btn4">确定</button>
+                          <button class="setting_yes_catch4">取消</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <!-- 赠品列表 -->
+                <div class="list_con_bottom border-box">
+                  <ul class="list_con_list border-box">
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_gifts">赠品</span
+                        >会计代理记账服务1个月（成都）
+                      </div>
+                      <div class="list_con_price">
+                        x2 <a href="" class="look_price">查看价格</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_gifts">赠品</span
+                        >会计代理记账服务1个月（成都）
+                      </div>
+                      <div class="list_con_price">
+                        x2 <a href="" class="look_price">查看价格</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥1980</p>
+              </li>
+              <li class="list_op">
+                <p class="del">
+                  <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+                </p>
+              </li>
+            </ul>
+
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_8" class="son_check" />
+                <label for="checkbox_8"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                    <div class="change_sku">
+                      修改属性
+                      <div class="change_sku_wrap">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <div class="list_con_bottom border-box">
+                  <!-- 直降 -->
+                  <div class="straight_down_wrap">
+                    <span class="add_gifts">直降</span>已优惠 ¥100.00
+                  </div>
+                  <!-- 增值服务 -->
+                  <ul class="list_con_list">
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_serve">增值服务</span
+                        >升级为三星服务顾问
+                      </div>
+                      <div class="list_con_price">
+                        <strong class="add_year">¥720/年</strong>x2<a
+                          href=""
+                          class="del_serve"
+                          >删除</a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_serve">增值服务</span>发票监开
+                        年开票≤20张
+                      </div>
+                      <div class="list_con_price">
+                        <strong class="add_year">¥720/年</strong>x1<a
+                          href=""
+                          class="del_serve"
+                          >删除</a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_serve">增值服务</span>业务合同模版审核
+                      </div>
+                      <div class="list_con_price">
+                        <strong class="add_year">¥720/年</strong>x1<a
+                          href=""
+                          class="del_serve"
+                          >删除</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥480</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥480</p>
+              </li>
+              <li class="list_op">
+                <p class="del">
+                  <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 满赠 -->
+        <li class="cartBox">
+          <div class="shop_info border-box">
+            <div class="active_type">满赠</div>
+            <p>
+              活动商品满¥2000.00领取赠品&nbsp;(<time
+                data-method="offset"
+                data-type="auto"
+                class="get_gifts"
+                >领取赠品</time
+              >)
+            </p>
+            <a href="">活动商品></a>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_10" class="son_check" />
+                <label for="checkbox_10"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                    <div class="change_sku">
+                      修改属性
+                      <div class="change_sku_wrap">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <div class="list_con_bottom border-box">
+                  <!-- 赠品列表 -->
+                  <ul class="list_con_list border-box">
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_gifts">赠品</span
+                        >会计代理记账服务1个月（成都）
+                      </div>
+                      <div class="list_con_price">
+                        x2<a href="" class="look_price">查看价格</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_gifts">赠品</span
+                        >会计代理记账服务1个月（成都）
+                      </div>
+                      <div class="list_con_price">
+                        x2<a href="" class="look_price">查看价格</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥1980</p>
+              </li>
+              <li class="list_op">
+                <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+                <a href="javascript:void(0)" class="like_btn">关注</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 多买优惠 -->
+        <li class="cartBox">
+          <div class="shop_info border-box">
+            <div class="active_type">多买优惠</div>
+            <p>
+              活动商品满2件9折优惠，满5件8折优惠&nbsp;(<time>已优惠：¥219.60</time>)
+            </p>
+            <a href="">活动商品></a>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_5" class="son_check" />
+                <label for="checkbox_5"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                    <div class="change_sku">
+                      修改属性
+                      <div class="change_sku_wrap">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <div class="list_con_bottom border-box">
+                  <!-- 赠品列表 -->
+                  <ul class="list_con_list border-box">
+                    <li>
+                      <div class="list_con_gifts">
+                        <span class="add_gifts">赠品</span
+                        >会计代理记账服务1个月（成都）
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥1980</p>
+              </li>
+              <li class="list_op">
+                <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+                <a href="javascript:void(0)" class="like_btn">关注</a>
+              </li>
+            </ul>
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_1" class="son_check" />
+                <label for="checkbox_1"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                    <div class="change_sku">
+                      修改属性
+                      <div class="change_sku_wrap">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <div class="list_con_bottom border-box"></div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥1980</p>
+              </li>
+              <li class="list_op">
+                <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+                <a href="javascript:void(0)" class="like_btn">关注</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 套餐 -->
+        <li class="cartBox">
+          <div class="shop_info border-box package-wrap">
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <div class="active_type">套餐</div>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_text one-line">
+                    <a href="javascript:void(0)"
+                      >有限公司注册 成都地区专业办理快速高效不满意全额退款</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥1980</p>
+              </li>
+              <li class="list_op">
+                <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+              </li>
+            </ul>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_12" class="son_check" />
+                <label for="checkbox_12"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <div class="list_con_bottom border-box"></div>
+              </li>
+
+              <li class="list_price opacity">
+                <p class="price">¥0</p>
+              </li>
+              <li class="list_amount opacity">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum opacity">
+                <p class="sum_price">¥0</p>
+              </li>
+              <li class="list_op">
+                <a href="javascript:void(0)" class="like_btn">关注</a>
+              </li>
+            </ul>
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_11" class="son_check" />
+                <label for="checkbox_11"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <div class="list_con_bottom border-box"></div>
+              </li>
+
+              <li class="list_price opacity">
+                <p class="price">¥0</p>
+              </li>
+              <li class="list_amount opacity">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum opacity">
+                <p class="sum_price">¥0</p>
+              </li>
+              <li class="list_op">
+                <a href="javascript:void(0)" class="like_btn">关注</a>
+              </li>
+            </ul>
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_13" class="son_check" />
+                <label for="checkbox_13"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <div class="list_con_bottom border-box"></div>
+              </li>
+              <li class="list_price opacity">
+                <p class="price">¥0</p>
+              </li>
+              <li class="list_amount opacity">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum opacity">
+                <p class="sum_price">¥0</p>
+              </li>
+              <li class="list_op">
+                <a href="javascript:void(0)" class="like_btn">关注</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="cartBox">
+          <div class="order_content">
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_18" class="son_check" />
+                <label for="checkbox_18"></label>
+              </li>
+              <li class="list_con">
+                <!-- 商品信息 -->
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                    <div class="change_sku">
+                      修改属性
+                      <div class="change_sku_wrap">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <!-- 赠品列表 -->
+                <div class="list_con_bottom border-box"></div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥1980</p>
+              </li>
+              <li class="list_op">
+                <p class="del">
+                  <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="cartBox">
+          <div class="order_content">
+            <ul class="order_lists clearfloat">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_17" class="son_check" />
+                <label for="checkbox_17"></label>
+              </li>
+              <li class="list_con">
+                <!-- 商品信息 -->
+                <div class="list_con_top">
+                  <div class="list_img">
+                    <a href="javascript:void(0)"
+                      ><img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471939_5d3ff283c05ba.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="list_text">
+                    <a href="javascript:void(0)" class=" two-line">有限公司注册 成都地区专业办理快速高效不满意全额退款</a>
+                    <div class="change_sku">
+                      修改属性
+                      <div class="change_sku_wrap">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_text_tip two-line_tip two-line">
+                    <span>青羊区/有注册地址/认缴有注册地</span>
+                  </div>
+                </div>
+                <!-- 赠品列表 -->
+                <div class="list_con_bottom border-box"></div>
+              </li>
+              <li class="list_price">
+                <p class="price">¥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:void(0)" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum" />
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">¥1980</p>
+              </li>
+              <li class="list_op">
+                <p class="del">
+                  <a href="javascript:void(0)" class="del_cart_btn">删除</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!--底部-->
+      <div class="bar-wrapper">
+        <div class="bar-right">
+          <div class="piece">
+            已选商品<strong class="piece_num">0</strong>件
+          </div>
+          <div class="totalMoney">
+            共计: <strong class="total_text">0.00</strong>
+          </div>
+          <div class="calBtn"><a href="javascript:void(0)">结算</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- 删除购物车商品 -->
+    <div id="del_cart_wrap">
+      <img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471919_5d3ff26fc07e5.jpg" alt="">
+      <p>您正在删除购物车商品，确认删除点击“<strong>确定</strong>”!</p>
+      <div class="setting_wrap">
+        <button class="setting_yes_btn1">确定</button>
+        <button class="setting_yes_catch1">取消</button>
+      </div>
+    </div>
+    <!-- 关注商品弹框 -->
+    <div id="like_good_wrap">
+      <img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471919_5d3ff26fc07e5.jpg" alt="">
+      <p>您已成功关注选择商品！可进入“<a>会员中心-关注商品查看</a> ”查看！</p>
+      <div class="setting_wrap">
+        <button class="setting_yes_btn2">确定</button>
+      </div>
+    </div>
+    <!-- 领取赠品弹出层 -->
+    <div id="get_gift_wrap">
+      <div class="get_gift_head">活动赠品，可领取<strong class="all_get_num">3</strong class='get_num_ed'>已领取 <strong>0</strong> </div>
+      <ul class="get_gift_content">
+        <li>
+          <div class="get_gift_check_wrap border-box">
+              <input type="checkbox" id="checkbox_22" class="get_gift_check" />
+              <label for="checkbox_22"></label>
+          </div>
+          <div class="get_gift_info_wrap">
+            <img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471919_5d3ff26fc07e5.jpg" alt="">
+            <div class="get_gift_info">
+              <h2>会计代理记账服务1年 武汉</h2>
+              <p>会计代理记账服务1年 武汉</p>
+              <strong>￥199.00</strong>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="get_gift_check_wrap border-box">
+              <input type="checkbox" id="checkbox_22" class="get_gift_check" />
+              <label for="checkbox_22"></label>
+          </div>
+          <div class="get_gift_info_wrap">
+            <img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471919_5d3ff26fc07e5.jpg" alt="">
+            <div class="get_gift_info">
+              <h2>会计代理记账服务1年 武汉</h2>
+              <p>会计代理记账服务1年 武汉</p>
+              <strong>￥199.00</strong>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="get_gift_check_wrap border-box">
+              <input type="checkbox" id="checkbox_22" class="get_gift_check" />
+              <label for="checkbox_22"></label>
+          </div>
+          <div class="get_gift_info_wrap">
+            <img src="https://group-portal.oss-cn-beijing.aliyuncs.com/2019-07-30_1564471919_5d3ff26fc07e5.jpg" alt="">
+            <div class="get_gift_info">
+              <h2>会计代理记账服务1年 武汉</h2>
+              <p>会计代理记账服务1年 武汉</p>
+              <strong>￥199.00</strong>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="setting_wrap">
+        <button class="setting_yes_btn">确定</button>
+        <button class="setting_yes_catch">取消</button>
+      </div>
+    </div>
+    <script src="./../js/lib/jQuery.js"></script>
+    <script src="./../layui/layui.all.js"></script>
+    <script src="./../js/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+@charset "UTF-8";
+.header-warp {
+  min-width: 1200px;
+  background-color: #fff;
+  height: 80px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+.header-bar {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: left;
+  height: 100%;
+}
+.header-bar > .logo {
+  float: left;
+  width: 126px;
+  height: 36px;
+  margin-top: 2px;
+}
+.header-bar > .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header-bar > .logo img {
+  width: 100%;
+  height: 100%;
+}
+.rich-editor-style * {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.rich-editor-style img {
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+.rich-editor-style * {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.rich-editor-style img {
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+.wrap-register {
+  width: 1200px;
+  height: calc(100vh - 411px);
+  min-height: 540px;
+  margin: 70px auto;
+  position: relative;
+  background: #fff;
+}
+.wrap-register .login-tip {
+  font-size: 12px;
+  color: #9c9ea1;
+  position: absolute;
+  right: 100px;
+  top: 40px;
+}
+.wrap-register .login-tip > a {
+  font-size: 12px;
+  color: #10BBB8;
+}
+.wrap-register .login-tip > a:hover {
+  text-decoration: underline;
+}
+.wrap-register .plate {
+  width: 1200px;
+  padding: 35px 0;
+}
+.wrap-register .plate > h1 {
+  font-size: 24px;
+  color: #252525;
+  text-align: center;
+  line-height: 55px;
+  margin-bottom: 24px;
+}
+.wrap-register .plate input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 42px;
+  font-size: 14px;
+  color: "";
+  border: 1px #ccc solid;
+  padding: 0 12px;
+  margin-bottom: 18px;
+}
+.wrap-register .plate input:focus,
+.wrap-register .plate input:hover {
+  border-color: #10BBB8;
+}
+.wrap-register .plate input.short-input {
+  width: 240px;
+  height: "";
+}
+.wrap-register .plate input.error {
+  border: 1px #f54743 solid;
+}
+.wrap-register .plate .img-code-box .img-code {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 70px;
+  height: 35px;
+  border: 1px #ccc solid;
+  margin: -3px 0 0 7px;
+  overflow: hidden;
+}
+.wrap-register .plate .img-code-box .img-code img {
+  width: 100%;
+}
+.wrap-register .plate .img-code-box button {
+  font-size: 14px;
+  color: #878787;
+  background: 0 0;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.wrap-register .plate input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate input:-moz-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate input::-moz-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate textarea:-moz-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate textarea::-moz-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate textarea:-ms-input-placeholder {
+  font-size: 14px;
+  color: #c2c6cc;
+}
+.wrap-register .plate .code-btn {
+  width: 148px;
+  height: 42px;
+  margin-left: 12px;
+  position: relative;
+  top: -1px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #10BBB8;
+  border: 1px #10BBB8 solid;
+  background: #fff;
+}
+.wrap-register .plate .code-btn:hover {
+  border: 1px #10BBB8 solid;
+  background: #10BBB8;
+  color: #fff;
+}
+.wrap-register .plate .code-btn:active {
+  border: 1px #10BBB8 solid;
+  background: #10BBB8;
+  color: #fff;
+}
+.wrap-register .plate .code-btn.disabled {
+  border: 1px #ddd solid;
+  color: #b8b8b8;
+  background: #f7f7f7;
+  cursor: not-allowed;
+}
+.wrap-register .plate .code-btn.wait {
+  font-size: 12px;
+  color: #999;
+  border: 1px #ccc solid;
+  cursor: wait;
+}
+.wrap-register .plate .bottom-tip {
+  font-size: 12px;
+  color: #9c9ea1;
+  text-align: center;
+  margin-top: 12px;
+}
+.wrap-register .plate .bottom-tip > a {
+  font-size: 12px;
+  color: #10BBB8;
+}
+.wrap-register .plate .bottom-tip > a:hover {
+  text-decoration: underline;
+}
+.wrap-register .plate .line-box {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+.wrap-register .plate .line-box > .pass-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/register/pass_ico.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 12px;
+  top: 16px;
+  display: none;
+}
+.wrap-register .plate .line-box > .error-txt {
+  font-size: 12px;
+  color: #f54743;
+  line-height: 12px;
+  position: absolute;
+  right: -10px;
+  top: 18px;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.wrap-register .plate .line-box.img-valid-code img {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 85px;
+  height: 40px;
+}
+.wrap-register .plate .blue-btn {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+  height: 42px;
+  border: none;
+  color: #fff;
+  background-color: #10BBB8;
+}
+.wrap-register .plate .blue-btn:hover {
+  background-color: #10BBB8;
+}
+.wrap-statement {
+  width: 1200px;
+  padding: 40px 0;
+  overflow-y: auto;
+  margin: 0 auto;
+  line-height: 1.8em;
+  color: #333;
+}
+.wrap-statement > h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.wrap-statement .right-txt {
+  text-align: right;
+}
+.wrap-statement h5 {
+  font-size: 16px;
+  color: "";
+  margin: 30px 0;
+}
+.wrap-statement h3 {
+  font-size: 18px;
+  color: "";
+  margin: 30px 0;
+}
+.wrap-statement .blue-txt {
+  font-size: "";
+  color: #3b8fd9;
+}
+.wrap-statement a:active,
+.wrap-statement a:hover {
+  text-decoration: underline;
+}

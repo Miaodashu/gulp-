@@ -1,0 +1,495 @@
+
+// 手指
+.pointer{
+    cursor: pointer;
+}
+
+.zp-head{
+    height: 902px;
+    width: 100%;
+    background: url('../images/active/banner.jpg') center/cover no-repeat;
+}
+.banner{
+    width:1024px;
+    height:162px;
+    padding: 46px 32px 40px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    .zp-view{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .zp-scroll{
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+.zp-body{
+    background: #D71106;
+    overflow: hidden;
+    background-image: url('../images/active/zhuangshi.png');
+    background-size: 100%;
+    // 交易快报
+    .deal-main{
+        width: 1462px;
+        height: 365px;
+        margin: 10px auto 0;
+        // box-shadow:0px 20px 30px 0px rgba(173,19,27,1);
+        background-color: chocolate;
+        background: url('../images/active/deal.png') center/cover no-repeat;
+        overflow: hidden;
+        position: relative;
+        .deal-ul{
+            // padding: 10px 0 0;
+            box-sizing: border-box;
+            }          
+        }
+        .deal-li{
+            float: left;
+            font-size:14px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(68,68,68,1);
+            &:nth-child(1), &:nth-child(4){
+                margin-left: 0;
+            }
+        }
+    }
+    // 特价公司
+    .tejia{
+        width: 1271px;
+        height: 622px;
+        margin: 25px auto 0;
+        background: url('../images/active/tejia.png') center/cover no-repeat;
+        position: relative;
+        .zpBox-ul{
+            margin-top: 30px;
+        }
+        .zpBox-li .zpBox-btn{
+            margin: 7px auto!important;
+        }
+        .more-btn{
+            margin: 12px auto 0;
+        }
+    }
+    // 特价内部li布局
+    .zpBox{
+        width:1226px;
+        height:510px;
+        padding: 70px 32px 0;
+        box-sizing: border-box;
+        position: absolute;z-index: 1;
+        top: 62px;
+        left: 24px;
+    }
+    .zpBox-ul{
+        margin-top: 30px;
+        .zpBox-li{
+            width:272px;
+            height:305px;
+            float: left;
+            margin-right: 20px;
+            background:url('../images/active/part1-list-01.png') center no-repeat;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 10px;
+                bottom: 10px;
+                box-shadow:0px 10px 12px 0px rgba(140,0,0,0.48);
+                z-index: -1;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            .li-top{
+                padding: 20px 20px 0;
+                box-sizing: border-box;
+            }
+            .zpBox-name{
+                font-size:16px;
+                line-height: 20px;
+               
+                font-family:Microsoft YaHei;
+                font-weight:bold;
+                color:rgba(51,51,51,1);
+                overflow: hidden;
+                .name{
+                    display: inline-block;
+                    width: 80%;
+                }
+                .sign{
+                    // width:32px;
+                    height:20px;
+                    padding: 0 4px;
+                    line-height: 20px;
+                    font-size:12px;
+                    margin-left: 10px;
+                    float: right;
+                    font-family:Microsoft YaHei;
+                    font-weight:400;
+                    color:rgba(255,255,255,1);
+                    background:rgba(245,70,12,1);
+                    border-radius:2px;
+                }
+            }
+            .zpBox-price{
+                font-size:14px;
+                font-family:Microsoft YaHei;
+                font-weight:400;
+                line-height: 15px;
+                margin-top: 12px;
+                margin-bottom: 15px;
+                .now{
+                    font-size:16px;
+                    font-weight:bold;
+                    color:rgba(238,80,2,1);
+                }
+                .cur{
+                    text-decoration:line-through;
+                    color:rgba(120,120,120,1);
+                }
+                .address{
+                    color:rgba(153,153,153,1);
+                    line-height: 14px;
+                    float: right;
+                    img{
+                        width: 10px;
+                        height: 14px;
+                        vertical-align: middle;
+                        position: relative;
+                        top: -1px;
+                    }
+                }
+            }
+            .zpBox-tap{
+                width: 100%;
+                height: 144px;
+                padding:0 12px;
+                box-sizing: border-box;
+                .tap-li{
+                    width: 50%;
+                    height: 72px;
+                    padding: 15px 20px 0;
+                    float: left;
+                    border-right: 1px dotted rgba(250,201,157,1);
+                    box-sizing: border-box;
+                    .tap-li-val{
+                        font-size:16px;
+                        line-height: 16px;
+                        margin-bottom: 12px;
+                        font-family:Microsoft YaHei;
+                        font-weight:400;
+                        color:rgba(68,68,68,1);
+                    }
+                    .tap-li-des{
+                        font-size:12px;
+                        line-height: 16px;
+                        font-family:Microsoft YaHei;
+                        font-weight:400;
+                        color:rgba(153,153,153,1);
+                    }
+                    // position: relative;
+                    &:nth-child(1), &:nth-child(2){
+                        border-bottom: 1px dotted rgba(250,201,157,1);
+                        border-top: 1px solid rgba(250,201,157,1);
+                    }
+                    &:nth-child(3), &:nth-child(4){
+                        border-bottom: 1px dotted rgba(250,201,157,1);
+                    }
+                    &:nth-child(2), &:nth-child(4){
+                        border-right:none;
+                    }
+                }
+            }
+            .zpBox-btn{
+                width:212px;
+                height:56px;
+                background: url('../images/active/btn-consultation.png') center/cover no-repeat;
+                margin: 0 auto;
+                font-size:16px;
+                font-family:Microsoft YaHei;
+                font-weight:bold;
+                color:rgba(255,255,255,1);
+                line-height:49px;
+                text-shadow:0px 2px 3px rgba(0, 0, 0, 0.3);
+                text-align: center;
+                img{
+                    // width: 10px;
+                    // height: 14px;
+                    vertical-align: middle;
+                    position: relative;
+                    top: -1px;
+                }
+            }
+        }
+    }
+    .more-btn{
+        width:216px;
+        height:50px;
+        margin: 22px auto 0;
+        background: url('../images/active/more-btn.png') center/cover no-repeat;
+        color: #F5460C;
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        line-height: 39px;
+        text-align: center;
+        img{
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+        }
+    }
+    // 热门资质·限量 
+    .hot-zizhi{
+        width: 1271px;
+        height: 645px;
+        margin: 25px auto 0;
+        background: url('../images/active/zizhi.png') center/cover no-repeat;
+        position: relative;
+        .zpBox-li{
+            height: 328px;
+            width: 272px;
+            margin-right: 20px;
+            background:url('../images/active/part2-list-01.png') center no-repeat;
+            position: relative;
+            z-index: 4;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 10px;
+                bottom: 0;
+                border-radius: 17px;
+                box-shadow:0px 10px 12px 0px rgba(140,0,0,0.48);
+                z-index: -1;
+            }
+            .zpBox-btn{
+                margin: 30px auto;
+            }
+        }
+        .zpBox-tap{
+            padding: 0!important;
+            .tap-li:nth-child(3){
+                width: 100%;
+                height: 94px;
+                border-right: none;
+                .tap-li-val{
+                    font-size:14px;
+                    color: #A0A0A0;
+                    span{
+                        color: #FF512F;
+                    }
+                }
+                .tap-li-des{
+                    font-size:14px;
+                    color: #666666;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .more-btn{
+            margin-top: 30px;
+        }
+    }
+    // 优质商标·5折钜惠
+    .shangbiao{
+        width: 1271px;
+        height: 733px;
+        margin: 25px auto 0;
+        background: url('../images/active/shangbiao.png') center/cover no-repeat;
+        position: relative;
+        .zpBox{
+            height: 615px;
+            .zpBox-li{
+                width:564px;
+                height:198px;
+                background:url('../images/active/part3-list-01.png') center/cover no-repeat;
+                position: relative;
+                padding: 26px 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                float: left;
+                &:nth-child(2), &:nth-child(4){
+                    margin-right: 0;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 14px;
+                    right: 14px;
+                    top: 10px;
+                    bottom: 0;
+                    box-shadow:0px 10px 12px 0px rgba(140,0,0,0.48);
+                    z-index: -1;
+                }
+                .top-box{
+                    .top-left{
+                        width:90px;
+                        height:90px;
+                        background:rgba(255,255,255,1);
+                        border:1px solid rgba(250, 201, 157, 1);
+                        box-sizing: border-box;
+                        border-radius:4px;
+                        float: left;
+                        margin-right: 20px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .right-name{
+                        .margin{
+                            margin-left: 50px;
+                        }
+                    }
+                    .zp-label{
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #999999;
+                        margin-top: 12px;
+                    }
+                    .zp-value{
+                        font-size: 16px;
+                        color: #333333;
+                    }
+                    .top-right{
+                        float: left;
+                        width: calc(100% - 110px);
+                        .sign{
+                            // width:32px;
+                            height:20px;
+                            padding: 0 4px;
+                            line-height: 20px;
+                            font-size:12px;
+                            margin-left: 10px;
+                            float: right;
+                            font-family:Microsoft YaHei;
+                            font-weight:400;
+                            color:rgba(255,255,255,1);
+                            background:rgba(245,70,12,1);
+                            border-radius:2px;
+                            float: right;
+                        }
+                    }
+                    
+                }
+                .bottom-left{
+                    font-size:20px;
+                    font-family:Microsoft YaHei;
+                    font-weight:bold;
+                    color:rgba(238,80,2,1);
+                    margin-top: 30px;
+                    .cur{
+                        font-size:16px;
+                        font-family:Microsoft YaHei;
+                        font-weight:400;
+                        text-decoration:line-through;
+                        color:rgba(120,120,120,1);
+                    }
+                }
+                .zpBox-btn{
+                    position: absolute;
+                    right: 25px;
+                    bottom: 6px;
+                }
+               
+            }
+            .more-btn{
+                margin-top: 14px;
+            }
+        }
+    }
+    .by-more{
+        background: #D71106;
+        .by-btn{
+            width:355px;
+            height:83px;
+            background: url('../images/active/more-btn1.png') center no-repeat;
+            margin: 0 auto;
+        }
+    }
+    // wxNumber
+    .wxNumber{
+        width: 1271px;
+        height: 574px;
+        margin: 0 auto ;
+        background: url('../images/active/gongzhonghao.png') center/cover no-repeat;
+        position: relative;
+        .more-btn{
+            margin-top: 30px;
+        }
+        .zpBox-li{
+            width:272px;
+            height:257px;
+            background:url('../images/active/part4-list-01.png') center/cover no-repeat;
+            float: left;
+            position: relative;
+            margin-right: 20px;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 14px;
+                right: 14px;
+                top: 10px;
+                bottom: 0;
+                box-shadow:0px 10px 12px 0px rgba(140,0,0,0.48);
+                z-index: -1;
+            }
+            .top-box{
+                width: 100%;
+                height: 64px;
+                line-height: 64px;
+                padding: 0 20px;
+                box-sizing: border-box;
+                font-size:16px;
+                font-family:Microsoft YaHei;
+                font-weight:bold;
+                color:rgba(51,51,51,1);
+                border-bottom: 1px solid #FAC99D;
+                .sign{
+                    // width:32px;
+                    height:20px;
+                    padding: 0 4px;
+                    line-height: 20px;
+                    font-size:12px;
+                    margin-top: 21px;
+                    margin-left: 10px;
+                    float: right;
+                    font-family:Microsoft YaHei;
+                    font-weight:400;
+                    color:rgba(255,255,255,1);
+                    background:rgba(245,70,12,1);
+                    border-radius:2px;
+                    float: right;
+                }
+            }
+            .bottom-box{
+                font-size:14px;
+                font-family:Microsoft YaHei;
+                font-weight:400;
+                color:rgba(68,68,68,1);
+                padding: 20px;
+                box-sizing: border-box;
+                .title{
+                    margin-bottom: 10px;
+                }
+                .zpBox-btn{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }

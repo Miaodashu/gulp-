@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>注册</title>
+  <link rel="stylesheet" href="./../css/reset.css" />
+  <link rel="stylesheet" href="./../css/regsiter.css" />
+  <link rel="stylesheet" href="./../layui/css/layui.css">
+</head>
+
+<body>
+  <div class="header-warp">
+    <div class="header-bar">
+      <h1 class="logo"><a href="https://www.dgg188.cn/"><img
+        src="./../images/common/" alt=""></a></h1>
+        <span>注册</span>
+    </div>
+  </div>
+  <div class="wrap-register">
+    <div class="login-tip">已有小顶云账号？<a href="/login.html">快捷登录&gt;</a></div>
+    <div class="plate">
+      <h1>欢迎注册小顶云</h1>
+      <div class="line-box">
+        <input id="telephone" type="tel" maxLength="11" placeholder="请输入手机号">
+        <span class="pass-icon"></span>
+        <span class="error-txt"></span>
+      </div>
+      <div class='line-box img-valid-code'>
+        <input id="imgCode" type="text" placeholder="请输入图形验证码" maxlength="4"
+          oninput="if(value.length>4)value=value.slice(0,4)">
+        <img src="https://guaguastatic.dgg.net/src/images/center/personal/logo.png" alt="图形验证码" class="change-picture"
+          id="imageCode">
+        <span class="error-txt"></span>
+      </div>
+      <div class="line-box"><input id="verifyCode" type="text" class="short-input" placeholder="请输入手机验证码" maxlength="6"
+          oninput="if(value.length>6)value=value.slice(0,6)"><button class="code-btn">获取验证码</button><span
+          class="error-txt"></span></div>
+      <div class="line-box"><input id="password" type="password" maxLength="18" placeholder="设置密码为6-18位的数字、字母"><span
+          class="error-txt"></span></div>
+      <div class="line-box"><input id="rePassword" type="password" maxLength="18" placeholder="重复输入新密码"><span
+          class="error-txt"></span></div>
+      <button class="block-btn blue-btn">
+        <div class="loading-icon smaller btn-loading">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        同意条款并注册
+      </button>
+      <div class="bottom-tip">点击注册即表示您同意
+        <a href="/login/register_statement.html" target="_blank">《小顶云网站服务条款》</a>
+        <a href="/login/statement_of_law.html" target="_blank">《法律声明及隐私权政策》</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-warp">
+    <div class="about-link-wrap">
+    </div>
+    <div class="friend-link-wrap">
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright © 2018-2019 顶呱呱科技股份有限公司 版权所有 保留一切权利 备案号：<a href="http://www.beian.miit.gov.cn" style="color:#9B9EA0;"
+          target='_blank'>蜀ICP备19000843号-1</a></p>
+      <ul>
+        <li>举报邮箱：jubao@dgg.net</li>
+        <li>投诉电话：4000-962540</li>
+      </ul>
+    </div>
+  </div>
+  <script src="./../js/lib/jQuery.js"></script>
+  <script src="./../layui/layui.all.js"></script>
+  <script src="./../js/regsiter.js"></script>
+
+</body>
+
+</html>

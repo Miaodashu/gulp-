@@ -1,0 +1,475 @@
+.pointer {
+  cursor: pointer;
+}
+.zp-head {
+  height: 902px;
+  width: 100%;
+  background: url('../images/active/banner.jpg') center / cover no-repeat;
+}
+.banner {
+  width: 1024px;
+  height: 162px;
+  padding: 46px 32px 40px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 120px;
+  left: 250px;
+}
+.banner .zp-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.banner .zp-scroll {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.zp-body {
+  background: #D71106;
+  overflow: hidden;
+  background-image: url('../images/active/zhuangshi.png');
+  background-size: 100%;
+}
+.zp-body .deal-main {
+  width: 1462px;
+  height: 365px;
+  margin: 10px auto 0;
+  background-color: chocolate;
+  background: url('../images/active/deal.png') center / cover no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.zp-body .deal-main .deal-ul {
+  box-sizing: border-box;
+}
+.zp-body .deal-li {
+  float: left;
+  font-size: 14px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #444444;
+}
+.zp-body .deal-li:nth-child(1),
+.zp-body .deal-li:nth-child(4) {
+  margin-left: 0;
+}
+.tejia {
+  width: 1271px;
+  height: 622px;
+  margin: 25px auto 0;
+  background: url('../images/active/tejia.png') center / cover no-repeat;
+  position: relative;
+}
+.tejia .zpBox-ul {
+  margin-top: 30px;
+}
+.tejia .zpBox-li .zpBox-btn {
+  margin: 7px auto!important;
+}
+.tejia .more-btn {
+  margin: 12px auto 0;
+}
+.zpBox {
+  width: 1226px;
+  height: 510px;
+  padding: 70px 32px 0;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  top: 62px;
+  left: 24px;
+}
+.zpBox-ul {
+  margin-top: 30px;
+}
+.zpBox-ul .zpBox-li {
+  width: 272px;
+  height: 305px;
+  float: left;
+  margin-right: 20px;
+  background: url('../images/active/part1-list-01.png') center no-repeat;
+  position: relative;
+}
+.zpBox-ul .zpBox-li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  bottom: 10px;
+  box-shadow: 0px 10px 12px 0px rgba(140, 0, 0, 0.48);
+  z-index: -1;
+}
+.zpBox-ul .zpBox-li:last-child {
+  margin-right: 0;
+}
+.zpBox-ul .zpBox-li .li-top {
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+}
+.zpBox-ul .zpBox-li .zpBox-name {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #333333;
+  overflow: hidden;
+}
+.zpBox-ul .zpBox-li .zpBox-name .name {
+  display: inline-block;
+  width: 80%;
+}
+.zpBox-ul .zpBox-li .zpBox-name .sign {
+  height: 20px;
+  padding: 0 4px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+  float: right;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #ffffff;
+  background: #f5460c;
+  border-radius: 2px;
+}
+.zpBox-ul .zpBox-li .zpBox-price {
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+.zpBox-ul .zpBox-li .zpBox-price .now {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ee5002;
+}
+.zpBox-ul .zpBox-li .zpBox-price .cur {
+  text-decoration: line-through;
+  color: #787878;
+}
+.zpBox-ul .zpBox-li .zpBox-price .address {
+  color: #999999;
+  line-height: 14px;
+  float: right;
+}
+.zpBox-ul .zpBox-li .zpBox-price .address img {
+  width: 10px;
+  height: 14px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.zpBox-ul .zpBox-li .zpBox-tap {
+  width: 100%;
+  height: 144px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li {
+  width: 50%;
+  height: 72px;
+  padding: 15px 20px 0;
+  float: left;
+  border-right: 1px dotted #fac99d;
+  box-sizing: border-box;
+}
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li .tap-li-val {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #444444;
+}
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li .tap-li-des {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #999999;
+}
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li:nth-child(1),
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li:nth-child(2) {
+  border-bottom: 1px dotted #fac99d;
+  border-top: 1px solid #fac99d;
+}
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li:nth-child(3),
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li:nth-child(4) {
+  border-bottom: 1px dotted #fac99d;
+}
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li:nth-child(2),
+.zpBox-ul .zpBox-li .zpBox-tap .tap-li:nth-child(4) {
+  border-right: none;
+}
+.zpBox-ul .zpBox-li .zpBox-btn {
+  width: 212px;
+  height: 56px;
+  background: url('../images/active/btn-consultation.png') center / cover no-repeat;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 49px;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.zpBox-ul .zpBox-li .zpBox-btn img {
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.more-btn {
+  width: 216px;
+  height: 50px;
+  margin: 22px auto 0;
+  background: url('../images/active/more-btn.png') center / cover no-repeat;
+  color: #F5460C;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  line-height: 39px;
+  text-align: center;
+}
+.more-btn img {
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.hot-zizhi {
+  width: 1271px;
+  height: 645px;
+  margin: 25px auto 0;
+  background: url('../images/active/zizhi.png') center / cover no-repeat;
+  position: relative;
+}
+.hot-zizhi .zpBox-li {
+  height: 328px;
+  width: 272px;
+  margin-right: 20px;
+  background: url('../images/active/part2-list-01.png') center no-repeat;
+  position: relative;
+  z-index: 4;
+}
+.hot-zizhi .zpBox-li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  border-radius: 17px;
+  box-shadow: 0px 10px 12px 0px rgba(140, 0, 0, 0.48);
+  z-index: -1;
+}
+.hot-zizhi .zpBox-li .zpBox-btn {
+  margin: 30px auto;
+}
+.hot-zizhi .zpBox-tap {
+  padding: 0!important;
+}
+.hot-zizhi .zpBox-tap .tap-li:nth-child(3) {
+  width: 100%;
+  height: 94px;
+  border-right: none;
+}
+.hot-zizhi .zpBox-tap .tap-li:nth-child(3) .tap-li-val {
+  font-size: 14px;
+  color: #A0A0A0;
+}
+.hot-zizhi .zpBox-tap .tap-li:nth-child(3) .tap-li-val span {
+  color: #FF512F;
+}
+.hot-zizhi .zpBox-tap .tap-li:nth-child(3) .tap-li-des {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.hot-zizhi .more-btn {
+  margin-top: 30px;
+}
+.shangbiao {
+  width: 1271px;
+  height: 733px;
+  margin: 25px auto 0;
+  background: url('../images/active/shangbiao.png') center / cover no-repeat;
+  position: relative;
+}
+.shangbiao .zpBox {
+  height: 615px;
+}
+.shangbiao .zpBox .zpBox-li {
+  width: 564px;
+  height: 198px;
+  background: url('../images/active/part3-list-01.png') center / cover no-repeat;
+  position: relative;
+  padding: 26px 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.shangbiao .zpBox .zpBox-li:nth-child(2),
+.shangbiao .zpBox .zpBox-li:nth-child(4) {
+  margin-right: 0;
+}
+.shangbiao .zpBox .zpBox-li::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 10px;
+  bottom: 0;
+  box-shadow: 0px 10px 12px 0px rgba(140, 0, 0, 0.48);
+  z-index: -1;
+}
+.shangbiao .zpBox .zpBox-li .top-box .top-left {
+  width: 90px;
+  height: 90px;
+  background: #ffffff;
+  border: 1px solid #fac99d;
+  box-sizing: border-box;
+  border-radius: 4px;
+  float: left;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.shangbiao .zpBox .zpBox-li .top-box .top-left img {
+  width: 100%;
+  height: 100%;
+}
+.shangbiao .zpBox .zpBox-li .top-box .right-name .margin {
+  margin-left: 50px;
+}
+.shangbiao .zpBox .zpBox-li .top-box .zp-label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+  margin-top: 12px;
+}
+.shangbiao .zpBox .zpBox-li .top-box .zp-value {
+  font-size: 16px;
+  color: #333333;
+}
+.shangbiao .zpBox .zpBox-li .top-box .top-right {
+  float: left;
+  width: calc(100% - 110px);
+}
+.shangbiao .zpBox .zpBox-li .top-box .top-right .sign {
+  height: 20px;
+  padding: 0 4px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #ffffff;
+  background: #f5460c;
+  border-radius: 2px;
+  float: right;
+}
+.shangbiao .zpBox .zpBox-li .bottom-left {
+  font-size: 20px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ee5002;
+  margin-top: 30px;
+}
+.shangbiao .zpBox .zpBox-li .bottom-left .cur {
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #787878;
+}
+.shangbiao .zpBox .zpBox-li .zpBox-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 6px;
+}
+.shangbiao .zpBox .more-btn {
+  margin-top: 14px;
+}
+.by-more {
+  background: #D71106;
+}
+.by-more .by-btn {
+  width: 355px;
+  height: 83px;
+  background: url('../images/active/more-btn1.png') center no-repeat;
+  margin: 0 auto;
+}
+.wxNumber {
+  width: 1271px;
+  height: 574px;
+  margin: 0 auto ;
+  background: url('../images/active/gongzhonghao.png') center / cover no-repeat;
+  position: relative;
+}
+.wxNumber .more-btn {
+  margin-top: 30px;
+}
+.wxNumber .zpBox-li {
+  width: 272px;
+  height: 257px;
+  background: url('../images/active/part4-list-01.png') center / cover no-repeat;
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+.wxNumber .zpBox-li::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 10px;
+  bottom: 0;
+  box-shadow: 0px 10px 12px 0px rgba(140, 0, 0, 0.48);
+  z-index: -1;
+}
+.wxNumber .zpBox-li .top-box {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #333333;
+  border-bottom: 1px solid #FAC99D;
+}
+.wxNumber .zpBox-li .top-box .sign {
+  height: 20px;
+  padding: 0 4px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-top: 21px;
+  margin-left: 10px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #ffffff;
+  background: #f5460c;
+  border-radius: 2px;
+  float: right;
+}
+.wxNumber .zpBox-li .bottom-box {
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #444444;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.wxNumber .zpBox-li .bottom-box .title {
+  margin-bottom: 10px;
+}
+.wxNumber .zpBox-li .bottom-box .zpBox-btn {
+  margin-top: 30px;
+}
